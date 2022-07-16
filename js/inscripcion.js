@@ -41,8 +41,8 @@ for (const capacitacion of capacitaciones) {
                               </div>`;
     sectionCapacitaciones.appendChild(container);
     document.getElementById(`btn${capacitacion.id}`).onclick = () => agregarInscripcion(`${capacitacion.id}`);
-  }
-  
+}
+
 function agregarInscripcion(id) {
   inscripcion.push(capacitaciones.find(p => p.id == id));
   localStorage.setItem("inscripcion", JSON.stringify(inscripcion));
@@ -63,7 +63,7 @@ function vaciarCarrito() {
     cantCapacitaciones.innerText = "0";
     localStorage.clear();
     inscripcion = [];
-  }
+}
 
 function cargarCarrito() {
     let inscripcion = JSON.parse(localStorage.getItem("inscripcion"));
@@ -72,4 +72,4 @@ function cargarCarrito() {
     } else {
       return inscripcion;
     }
-  }
+}
