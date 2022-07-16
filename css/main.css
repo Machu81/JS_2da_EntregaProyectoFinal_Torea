@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  background: #f5f5f5;
+  color: #000100;
+  font-family: "Oswald", sans-serif; }
+
+.boton {
+  font-size: 18px;
+  font-family: oswald, sans-serif;
+  width: 50%;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  align-self: center;
+  color: #f5f5f5;
+  background-color: #4f7070; }
+
+.boton:hover {
+  background-color: #5a9999;
+  border: solid 0.5px #000100; }
+
+p {
+  margin: 0px;
+  font-size: 20px; }
+
+ol,
+ul {
+  padding-left: 0px; }
+
+header {
+  background-color: #4f7070;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 15px 0px #000100;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+  header nav div {
+    display: flex;
+    justify-content: flex-end; }
+    header nav div .logo {
+      font-size: 55px;
+      font-style: italic; }
+    header nav div a {
+      margin: 20px; }
+
+footer {
+  background-color: #4f7070;
+  color: #f5f5f5;
+  margin-top: 60px;
+  padding: 20px;
+  bottom: 0px;
+  font-size: 20px; }
+  footer p {
+    text-align: center; }
+
+.infoBar {
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 0px; }
+  .infoBar h1 {
+    color: #4f7070;
+    font-style: bold;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px; }
+  .infoBar .breadcrumb-item {
+    font-size: 20px;
+    color: #4f7070; }
+  .infoBar #colorbreadcrumb {
+    color: #4c9e9e; }
+
+#container-general {
+  display: flex;
+  flex-direction: row; }
+  #container-general #section-capacitaciones {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end; }
+    #container-general #section-capacitaciones .card-capacitacion {
+      width: 30%;
+      margin: 20px;
+      text-align: center; }
+      #container-general #section-capacitaciones .card-capacitacion .img-container {
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 10px;
+        margin-top: 20px; }
+        #container-general #section-capacitaciones .card-capacitacion .img-container img {
+          width: 100%;
+          height: 50%;
+          border-radius: 10px; }
+      #container-general #section-capacitaciones .card-capacitacion .info-capacitacion {
+        display: flex;
+        flex-direction: column; }
+  #container-general #section-inscripcion {
+    width: 30%;
+    height: 30%;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #9eb9b9;
+    border-radius: 10px;
+    position: sticky;
+    top: 200px; }
+    #container-general #section-inscripcion div {
+      display: flex;
+      justify-content: center;
+      margin: 10px; }
+      #container-general #section-inscripcion div h2,
+      #container-general #section-inscripcion div h3 {
+        font-size: 25px; }

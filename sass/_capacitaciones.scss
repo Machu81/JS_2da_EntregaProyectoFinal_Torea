@@ -1,0 +1,83 @@
+.infoBar {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 0px;
+    
+    h1 {
+        color: $gris;
+        font-style: bold;
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      .breadcrumb-item {
+        font-size: 20px;
+        color: $gris;
+      }
+
+      #colorbreadcrumb{
+        color: $turquesa;
+      }
+  }
+  
+#container-general {
+    display: flex;
+    flex-direction: row;
+
+    #section-capacitaciones{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-end;
+
+        .card-capacitacion {
+            width: 30%;
+            margin: 20px;
+            text-align: center;
+
+            .img-container {
+                overflow: hidden;
+                position: relative;
+                margin-bottom: 10px;
+                margin-top: 20px;
+
+                img {
+                    width: 100%;
+                    height: 50%;
+                    border-radius: 10px;
+                }
+            }
+
+            .info-capacitacion {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    #section-inscripcion {
+        width: 30%;
+        height: 30%;
+        margin: 30px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: $celeste;
+        border-radius: 10px;
+        position: sticky;
+        top: 200px;
+
+        div {
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+
+            h2,
+            h3 {
+                font-size: 25px;
+            }
+        }
+    }
+}
