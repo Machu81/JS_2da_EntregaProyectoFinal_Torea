@@ -29,18 +29,19 @@ botonFinalizar.onclick = () => {
 }
 
 for (const capacitacion of capacitaciones) {
-    let container = document.createElement("div");
-    container.setAttribute("class", "card-capacitacion");
-    container.innerHTML = ` <div class="img-container">
-                              <img src="${capacitacion.foto}" alt="${capacitacion.nombre}" class="img-capacitacion"/>
-                              </div>
-                              <div class="info-capacitacion">
-                              <p class="font">${capacitacion.nombre}</p>
-                              <strong class="font">$${capacitacion.precio}</strong>
-                              <button class="boton" id="btn${capacitacion.id}"> Inscribite </button>
-                              </div>`;
-    sectionCapacitaciones.appendChild(container);
-    document.getElementById(`btn${capacitacion.id}`).onclick = () => agregarInscripcion(`${capacitacion.id}`);
+  let container = document.createElement("div");
+  container.setAttribute("class", "card-capacitacion");
+  container.innerHTML = 
+    `<div class="img-container">
+      <img src="${capacitacion.foto}" alt="${capacitacion.nombre}" class="img-capacitacion"/>
+    </div>
+    <div class="info-capacitacion">
+      <p class="font">${capacitacion.nombre}</p>
+      <strong class="font">$${capacitacion.precio}</strong>
+      <button class="boton" id="btn${capacitacion.id}"> Inscribite </button>
+    </div>`;
+  sectionCapacitaciones.appendChild(container);
+  document.getElementById(`btn${capacitacion.id}`).onclick = () => agregarInscripcion(`${capacitacion.id}`);
 }
 
 function agregarInscripcion(id) {
@@ -59,17 +60,17 @@ function calcularTotalInscripcion() {
 }
 
 function vaciarCarrito() {
-    montoTotalInscripcion.innerText = "0";
-    cantCapacitaciones.innerText = "0";
-    localStorage.clear();
-    inscripcion = [];
+  montoTotalInscripcion.innerText = "0";
+  cantCapacitaciones.innerText = "0";
+  localStorage.clear();
+  inscripcion = [];
 }
 
 function cargarCarrito() {
-    let inscripcion = JSON.parse(localStorage.getItem("inscripcion"));
-    if (inscripcion == null) {
-      return [];
-    } else {
-      return inscripcion;
-    }
+  let inscripcion = JSON.parse(localStorage.getItem("inscripcion"));
+  if (inscripcion == null) {
+    return [];
+  } else {
+    return inscripcion;
+  }
 }
